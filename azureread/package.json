@@ -1,0 +1,15 @@
+{
+  "name": "readdevice2cloud",
+  "version": "1.0.0",
+  "description": "Read device to cloud messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqp10": "^3.1.4",
+    "bluebird": "^3.3.5"
+  }
+}
