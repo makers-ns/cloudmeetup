@@ -18,7 +18,8 @@ device
    console.log('connect');
    device.subscribe('control');
    setInterval(function () {
-      var TOPIC = 'iot-2/evt/status/fmt/json';
+        // Usual MQTT topics are hierarchical like : 'iot-2/evt/status/fmt/json'
+        // Here we make it simple 'rms'
         device.publish('rms', '{"RMS":' + random(-96, 0) + '}');//Payload
    }, 2000); //Publishing every 2000ms
 
