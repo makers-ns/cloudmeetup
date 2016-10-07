@@ -3,7 +3,7 @@ var defaultClient = ArtikCloud.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: artikcloud_oauth
 var artikcloud_oauth = defaultClient.authentications['artikcloud_oauth'];
-artikcloud_oauth.accessToken = "86f8f05a411043b989a56b7910fe1701"
+artikcloud_oauth.accessToken = "<DEVICE TOKEM>"
 
 var api = new ArtikCloud.MessagesApi()
 
@@ -11,7 +11,7 @@ var data = new ArtikCloud.MessageAction(); // {MessageAction} Message or Action 
 
 console.dir(data);
 data.data = {"temp" : 32};
-data.sdid = "4e24f92d372a43cdaefe34720ff94cd3";
+data.sdid = "<DEVICE ID>";
 
 var callback = function(error, success, response) {
 
