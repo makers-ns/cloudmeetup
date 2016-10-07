@@ -19,7 +19,7 @@ CLIENTID += ':' + ID;
 //CLIENTID -s e.g. d:xrxila:edison-air:784b87a81234
 
 var AUTHMETHOD = 'use-token-auth';//As of July 15 2015 this is the only one that works on Bluemix
-var AUTHTOKEN = 'meetup123';
+var AUTHTOKEN = '<DEVICE TOKEN>';
 
 var requireds = { clientId: CLIENTID, username: AUTHMETHOD, password: AUTHTOKEN };
 
