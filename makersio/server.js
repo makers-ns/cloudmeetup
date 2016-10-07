@@ -7,15 +7,15 @@ var app = express();
 var iothub = require('azure-iothub');
 var bodyParser = require('body-parser');
 
-var connectionString = 'HostName=MakerNS.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=rw7hsW1VRGYN0Kg0Fp2aMdyMqUeo7ft/mqmxcMBXcfI=';
+var connectionString = 'HostName=MakerNS.azure-devices.net;SharedAccessKeyName=<SAS KEYNAME>;SharedAccessKey=<SAS KEY VALUE>';
 
 var registry = iothub.Registry.fromConnectionString(connectionString);
 var device = new iothub.Device(null);
 var htmlOutput;
 
 //Device
-var jsonDevice = { "DeviceId": "gateway",
-"DeviceKey" : "u0q/lFZ5hrcfCP/c8pVg+Mk2U4Ew5ERiD58+tyXgkTE="};
+var jsonDevice = { "DeviceId": "<DEVICE ID>",
+"DeviceKey" : "<DEVICE KEY>"};
 var deviceFromConnectionString = require('azure-iot-device-amqp').clientFromConnectionString;
 var Message = require('azure-iot-device').Message;
 var deviceConnectionString = 'HostName=MakerNS.azure-devices.net;DeviceId='+jsonDevice.DeviceId+';SharedAccessKey='+jsonDevice.DeviceKey;
