@@ -7,8 +7,8 @@ var Promise = require('bluebird');
 
 var protocol = 'amqps';
 var eventHubHost = 'ihsuprodamres021dednamespace.servicebus.windows.net/';
-var sasName = 'iothubowner';
-var sasKey = 'rw7hsW1VRGYN0Kg0Fp2aMdyMqUeo7ft/mqmxcMBXcfI=';
+var sasName = '<SAS NAME>';
+var sasKey = '<SAS KEY>';
 var eventHubName = 'iothub-ehub-makerns-37608-50753e4680';
 var numPartitions = 2;
 
