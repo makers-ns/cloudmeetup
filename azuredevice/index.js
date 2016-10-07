@@ -1,6 +1,6 @@
 'use strict';
 var jsonDevice = { "DeviceId": "myFirstDevice",
-"DeviceKey" : "8rGHiig7TQTLNwJpqT7Rv7DpcIobLx2UgNd1kSmufS8="};
+"DeviceKey" : "<DEVICE KEY>"};
 
 var clientFromConnectionString = require('azure-iot-device-amqp').clientFromConnectionString;
 var Message = require('azure-iot-device').Message;
